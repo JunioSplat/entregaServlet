@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Junin Viagens</title>
+    <link rel="stylesheet" href="StyleCSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- estrutura navbar -->
+        <nav class="navbar navbar-expand-lg text-white fixed-top" style="background: rgb(12,6,54);
+        background:linear-gradient(90deg, rgba(12,6,54,1) 34%, rgba(9,81,105,1) 81%, rgba(5,155,154,1) 100%);">
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="img/logo-icon.png" alt="logo" width="45" height="40" class="d-inline-block align-text-top">
+                Junin Viagens |
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="destino.html">Destino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                
+            </div>
+              <!-- Botão de Cadastro -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cadastro.jsp">Cadastre-se</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="ReadController">Listar Cadastros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container-fluid">
+        <main>
+            <div class="bounce-in-top" id="ida">
+                <h2><i class="fa-solid fa-location-dot fa-2xs"></i> Vamos para onde?</h2>
+
+            </div>
+
+
+            <div class="destination-selector">
+                <label for="destination">Escolha o local de origem:</label>
+                <select id="destination" name="destination">
+                    <option value="" disabled selected>Selecione um destino</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="BH">Belo Horizonte</option>
+
+                </select>
+            </div>
+
+            <div class="destination-selector">
+                <label for="destination">Escolha o local de destino:</label>
+                <select id="destination" name="destination">
+                    <option value="" disabled selected>Selecione um destino</option>
+                    <option value="SP">Orlando</option>
+                    <option value="RJ">Paris</option>
+                    <option value="BH">Maranhão</option>
+
+                </select>
+                <button type="button" class="btn btn-light">Obter Pacotes</button>
+            </div>
+
+        </main>
+
+
+
+    </div>
+    <footer>
+        <p>&copy; Junin Viagens Todos os Direitos Reservados</p>
+    </footer>
+    </nav>
+
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="JAVASCRIPT/aula1.js"></script>
+
+</html>
